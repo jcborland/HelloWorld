@@ -28,13 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnHelloWorld = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
+            // 
+            // btnHelloWorld
+            // 
+            this.btnHelloWorld.Location = new System.Drawing.Point(194, 127);
+            this.btnHelloWorld.Name = "btnHelloWorld";
+            this.btnHelloWorld.Size = new System.Drawing.Size(75, 23);
+            this.btnHelloWorld.TabIndex = 0;
+            this.btnHelloWorld.Text = "Hello World";
+            this.btnHelloWorld.Click += new System.EventHandler(this.btnHelloWorld_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 278);
+            this.Controls.Add(this.btnHelloWorld);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -43,6 +54,7 @@
 
         #endregion
 
+        private DevExpress.XtraEditors.SimpleButton btnHelloWorld;
     }
 }
 
